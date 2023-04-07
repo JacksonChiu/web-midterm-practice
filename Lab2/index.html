@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Club </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body background="https://www.limedia.tw/wp-content/uploads/2020/09/%E5%B0%81%E9%9D%A2%E5%9C%96-2020-09-29T181644.965.jpg">
+        <h1>社團課程時間表</h1>
+        請設定第一天的日期：<input type="date" id="inputDate" onchange="inputChange()">
+        <br>
+        請輸入要新增的活動：<input type="text" id ="inputWord" >
+        <button id="inputBottom" onclick="inputWord()">送出</button>
+
+        <table id="courseTable"></table>
+        <script src="//unpkg.com/jquery"></script>
+        <script src="topic.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

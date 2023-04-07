@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin-Toss 扭蛋</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <h1>
+        Push Button To Toss The Coin <br>
+        如果是Heads，可以參加扭蛋<br> 
+      </h1>
+      
+
+      <!-- <div class="dice"> -->
+        <div class="tmp1" id="temp">
+            <img class="img1" src="images/heads.png">
+            <p>Heads</p>
+        </div>
+        <div class="tmp2" id="temp2">
+            <img class="img1" src="images/tails.png">
+            <p>Tails</p>
+        </div>
+    </div>
+
+    <h2></h2>
+    <div id="player"></div>
+    <br>
+
+    <div class="mine">
+      <button id="tossbutton" class="btn btn-primary" type="button" onclick=click_btn()><strong>Click To Toss</strong></button>
+    </div>
+  
+  <script src="//unpkg.com/jquery"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="main.js"></script>
+  <script src="playlist.js"></script>
+  </body>
+  <script>
+    function click_btn(){
+        var randomNumber1 = Math.floor(Math.random()*2) + 1;
+        var randomNumber2 = Math.floor(Math.random()*2) + 1;
+        temp = document.querySelector("h1");
+        temp.style.fontSize= "7rem";
+        value = document.querySelector("#temp");
+        document.querySelector("#temp2").innerHTML= "";
+
+        if(randomNumber1==1)
+        {
+            temp.innerHTML = "Heads!!";
+            value.innerHTML = '<img class="img1" src="images/heads.png"><p>下方進行扭蛋中</p>';
+
+            if(randomNumber2==1)
+            {
+              player.loadVideoById({
+                videoId:playList[1],
+                showinfo:0,
+                rel: 0,
+                startSeconds:playTime[1][0],
+                endSeconds:playTime[1][1],
+                suggestedQuality:"large"
+              });
+
+              player.playVideo();
+            }
+            else
+            {
+              player.loadVideoById({
+                videoId:playList[2],
+                showinfo:0,
+                rel: 0,
+                startSeconds:playTime[2][0],
+                endSeconds:playTime[2][1],
+                suggestedQuality:"large"
+              });
+              player.playVideo();
+            }
+            
+        }
+        else
+        {
+            temp.innerHTML = "Tails!!";
+            value.innerHTML = '<img class="img1" src="images/tails.png"><p>加油!! 重新試試看</p>';
+            
+            player.loadVideoById({
+            videoId:playList[0],
+            startSeconds:playTime[0][0],
+            endSeconds:playTime[0][1],
+            suggestedQuality:"large"
+            });
+            
+        }
+    }
+  </script>
+</html>

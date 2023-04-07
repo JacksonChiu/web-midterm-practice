@@ -1,0 +1,17 @@
+body{
+    text-align:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    font-size:1.5em;
+
+}
+
+td{
+    border-bottom: 1px solid blue;   
+}

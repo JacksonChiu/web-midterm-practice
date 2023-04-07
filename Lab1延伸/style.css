@@ -1,0 +1,26 @@
+body{
+    text-align:center;
+}
+
+li::marker,li{
+    text-align: center; 
+    color: white;   
+    font-size:50px;
+    font-weight:bold;
+}
+
+h1{
+    font-size:50px;
+    color: white; 
+}
+
+img
+{
+    border-radius:50%
+}
+
+.image-bg-1 {
+    background-size: cover;
+    background-image: url("https://a.cdn-hotels.com/gdcs/production145/d903/8aabf806-31a8-4ba1-8400-ee2d0ab72248.jpg");
+    opacity: 0.5;
+  }
