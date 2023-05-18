@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <img id="tvphoto" src="tv.png">
+        <video id="myVideo" width="320" height="240"></video>
+        <br>
+        <div style="display:flex">
+            <div>
+                <div>
+                    <p>Volume : <span id="volumeDisplay">?</span>
+                        <button id="lowerVolumeBtn">-</button>
+                        <button id="higherVolumeBtn">+ </button>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Time : <span id="timeDisplay">? / ?</span>
+                        <br>
+                        <input type="range" id="progressBar" min="0" value="0"></inputtype>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Speed: <span id="SpeedDisplay">?</span>X
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Mute: <span id="MuteDisplay">?</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Channel(1~5): <span id="ChannelDisplay">?</span>
+                    </p>
+                </div>
+                <button id="playBtn">Play</button>
+                <button id="fullBtn">FullScreen</button>
+            </div>
+            
+            <div class="image-container">
+                <img id="remote" src="img/remote.png">
+                <button id="button1">
+                    <img id="imgsizerow1" src="img/gofast.svg" alt="your image">
+                </button>
+                <button id="button2">
+                    <img id="imgsizerow1" src="img/reverse.svg" alt="your image">
+                </button>
+                <button id="button3">
+                    <img id="volumeup" src="img/volumeup.svg" alt="your image">
+                </button>
+                <button id="button4">
+                    <img id="volumedown" src="img/volumedown.svg" alt="your image">
+                </button>
+                <button id="button5">
+                    <img id="changeright" src="img/changeright.svg" alt="your image">
+                </button>
+                <button id="button6">
+                    <img id="changeleft" src="img/changeleft.svg" alt="your image">
+                </button>
+                <button id="button7">
+                    <img id="mute" src="img/mute.svg" alt="your image">
+                </button>
+            </div>
+        </div>
+        
+
+        <script src="//unpkg.com/jquery"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+#progressBar{
+    width:320px;
+}
+
+#remote{/*遙控器大小*/
+    width: 400px;
+} 
+
+#imgsizerow1{/*遙控器大小*/
+    width: 20px;
+} 
+
+#volumeup{/*遙控器大小*/
+    width: 25px;
+} 
+
+#volumedown{/*遙控器大小*/
+    width: 18px;
+}
+
+#changeright{
+    width: 18px;
+}
+
+#changeleft{
+    width: 18px;
+}
+
+#mute{
+    width: 21px;
+}
+
+#button1{
+    border-radius:  90px;
+    position: absolute;
+    top: 95px;
+    left: 215px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button2{
+    border-radius:  90px;
+    position: absolute;
+    top: 95px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button3{
+    border-radius:  90px;
+    position: absolute;
+    top: 139px;
+    left: 217px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button4{
+    border-radius:  90px;
+    position: absolute;
+    top: 139px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button5{
+    border-radius:  90px;
+    position: absolute;
+    top: 180px;
+    left: 217px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button6{
+    border-radius:  90px;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+#button7{
+    border-radius:  90px;
+    position: absolute;
+    top: 138px;
+    left: 148px;
+    transform: translate(-50%, -50%);
+    z-index: 1;/*疊放優先權*/
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  } 
+
+#tvphoto {
+    /* position:absolute; */
+    top:10px;
+    left:10px;
+    width:485px;
+    height:420px;
+    z-index:1;
+}
+
+#myVideo {
+    position:absolute;
+    top:45px;
+    left:65px;
+    width:300px;
+    height:400px;
+    z-index:2;
+}

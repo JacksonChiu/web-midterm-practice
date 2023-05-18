@@ -1,0 +1,12 @@
+meter{
+    width:200px;
+}
+
+progress{
+    width:200px;
+}
+
+input[type="checkbox"]:checked + span{
+    color:#666;
+    text-decoration:line-through 3px solid #555 ; 
+}

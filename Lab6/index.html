@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <video id="myVideo" width="320" height="240"></video>
+        <br>
+        <div>
+            <p>Volume : <span id="volumeDisplay">?</span>
+                <button id="lowerVolumeBtn">-</button>
+                <button id="higherVolumeBtn">+ </button>
+            </p>
+        </div>
+        <div>
+            <p>
+                Time : <span id="timeDisplay">? / ?</span>
+                <br>
+                <input type="range" id="progressBar" min="0" value="0"></inputtype>
+            </p>
+        </div>
+        <button id="playBtn">Play</button>
+        <button id="fullBtn">FullScreen</button>
+        <script src="//unpkg.com/jquery"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

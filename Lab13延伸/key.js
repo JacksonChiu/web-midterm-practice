@@ -1,0 +1,1 @@
+let weatherMapAPIKey="ece04d0449d3fe204f5251e1740499fe";
